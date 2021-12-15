@@ -9,5 +9,8 @@
             <a href="{% url 'details_persona' persona.id %}"> ({{persona.id}}), {{persona.first_name}}, {{persona.last_name}}, {{persona.email}}</a>
         </li>
         {% endfor %}
+        <li>
+            <a href="{% url 'persona_generate' %}">New generate</a>
+        </li>
     </ul>
 {% endblock content %}
