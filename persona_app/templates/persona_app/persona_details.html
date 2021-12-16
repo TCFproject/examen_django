@@ -2,7 +2,22 @@
 {% block title %}Affichage des details du persona{% endblock title %}
 
 {% block content %}
-    {{personas.first_name}}<br>
-    {{personas.last_name}}<br>
+
+<center><FONT face="Copperplate" size="1000"> Nom : {{personas.first_name}}<br>
+    Prenom : {{personas.last_name}}<br>
+    Nom de rue : {{personas.address_street}}<br>
+    N° d'addresse : {{personas.address_number}}<br>
+    Ville : {{personas.city}}<br>
+    Pays : {{personas.country}}<br>
+    Code postal : {{personas.postcode}}<br>
+    Email : {{personas.email}}<br>
+    Pseudo : {{personas.username}}<br>
+    Mot de passe : {{personas.password}}<br>
+    Age : {{personas.age}}<br>
+
+
+
     <img src="{{personas.picture}}">
+
+   </FONT> </center>
 {% endblock content %}
